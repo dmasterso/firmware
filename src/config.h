@@ -23,17 +23,26 @@
 #ifndef UART_BAUD
     #define UART_BAUD 3000000
 #endif
+#ifndef OLED_I2C_SDA
+    #define OLED_I2C_SDA 28
+#endif
+#ifndef OLED_I2C_SCL
+    #define OLED_I2C_SCL 25
+#endif
 
-
-#define OLED_I2C_SDA 28
-#define OLED_I2C_SCL 25
 #define OLED_I2C_ADDR 0x3C
 #define OLED_I2C_PERIPH i2c0
 #define OLED_I2C_CLOCK 400000
 
-#define PSRAM_CS 2
-#define PSRAM_CLK 3
-#define PSRAM_DAT 4  /* IO0-IO3 must be sequential! */
+#ifndef PSRAM_CS
+    #define PSRAM_CS 2
+#endif
+#ifndef PSRAM_CLK
+    #define PSRAM_CLK 3
+#endif
+#ifndef PSRAM_DAT
+    #define PSRAM_DAT 4  /* 4 5 6 7 : IO0-IO3 must be sequential! */
+#endif
 #define PSRAM_CLKDIV 2
 
 // SD2PSX
