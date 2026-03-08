@@ -72,7 +72,7 @@ def getGamesHDLBatchInstaller() -> ([], [], {}, int):
     games_count = 0
 
     data = ""
-    with open(sys.argv[3] + "/gamename.csv", "r") as f:
+    with open(sys.argv[3] + "/gamename.csv", "r", encoding='utf-8') as f:
         data = f.read()
 
     if True:
