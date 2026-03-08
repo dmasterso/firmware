@@ -11,6 +11,7 @@ Hardware requirements:
 - PSRAM 8MB
 - Micro SD card reader 3.3V
   
+Check gen2diy folder for a diagram of the connections.
 
 ![sd2psXtd Logo](doc/Logo.png)
 *Logo by Berion ❤️*
