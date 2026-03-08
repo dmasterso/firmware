@@ -1,6 +1,6 @@
 
 # Variants...
-set(VARIANT "SD2PSX" CACHE STRING "Firmware variant to build")
+set(VARIANT "PMCZero" CACHE STRING "Firmware variant to build")
 set_property(CACHE VARIANT PROPERTY STRINGS
                     "SD2PSX"
                     "PMC+"
@@ -92,8 +92,8 @@ elseif( VARIANT STREQUAL "PMCZero")
     set(PIN_PSX_CMD 10)
     set(PIN_PSX_DAT 9)
     set(PIN_PSX_SPD_SEL 11)
-    add_compile_definitions("UART_TX=7"
-                            "UART_RX=8"
+    add_compile_definitions("UART_TX=20"
+                            "UART_RX=21"
                             "UART_PERIPH=uart1"
                             "UART_BAUD=115200"
                             "SD_PERIPH=SPI"
@@ -105,14 +105,19 @@ elseif( VARIANT STREQUAL "PMCZero")
                             "FLASH_OFF_EEPROM=0x1fc000"
                             "MMCE_PRODUCT_ID=0x4"
                             "PMC_BUTTONS=1"
-                            "PIN_BTN_LEFT=27"
-                            "PIN_BTN_RIGHT=28"
-                            "PIN_BTN_BOOT=26"
-                            "WS2812=1"
+                            "PIN_BTN_LEFT=7"
+                            "PIN_BTN_RIGHT=6"
+                            "PIN_BTN_BOOT=8"
+                            #"WS2812=1"
+                            "OLED_I2C_SCL=5"
+                            "OLED_I2C_SDA=4"
+                            "PSRAM_CS=15"
+                            "PSRAM_CLK=14"
+                            "PSRAM_DAT=26"
                             )
-    set(SD2PSX_WITH_GUI FALSE)
-    set(SD2PSX_WITH_PSRAM FALSE)
-    set(SD2PSX_WITH_LED TRUE)
+    set(SD2PSX_WITH_GUI TRUE)
+    set(SD2PSX_WITH_PSRAM TRUE)
+    set(SD2PSX_WITH_LED FALSE)
     add_compile_definitions(PICO_FLASH_SIZE_BYTES=2097152)
 elseif( VARIANT STREQUAL "SD2PSXlite")
     set(PIN_PSX_ACK 16)
