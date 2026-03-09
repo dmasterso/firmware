@@ -2,6 +2,8 @@ This fork of SD2PSXTD is for those who want to make their own gen2 SD2PSXTD card
 It requires soldering skills specially for the PSRAM as it is a tiny 8pin SOIC.
 In general, this is best suited for those who want to make an internal install or make their own memcard PCB.
 
+There is a PCB that currently being developed by TheMercurywoman: 
+https://github.com/TheMercuryWoman/sd2psx-friendly-pcb
 
 Hardware requirements:
 
