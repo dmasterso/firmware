@@ -1,7 +1,7 @@
-This fork of SD2PSXTD is for those who want to make their own gen2 SD2PSXTD card with a RP2040 Zero board.
-It requires soldering skills specially for the PSRAM as it is a tiny 8pin SOIC.
+This fork of SD2PSXTD is for those who want to make their own gen2 SD2PSXTD card with a RP2040 Zero board. This will essentially duplicate all the functionalities of the PSXmemcard gen2 with a screen, 2 buttons, and micro SD card slot.
+
+It requires basic soldering skills specially for the PSRAM as it is a tiny 8pin SOIC.
 In general, this is best suited for those who want to make an internal install or make their own memcard PCB.
-Check the gen2diy folder for pdf with connection diagram.
 
 There is a PCB that currently being developed by TheMercurywoman: 
 https://github.com/TheMercuryWoman/sd2psx-friendly-pcb
