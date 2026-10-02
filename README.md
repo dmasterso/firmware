@@ -1,6 +1,7 @@
 This fork of SD2PSXTD is for those who want to make their own gen2 SD2PSXTD card with a RP2040 Zero board.
 It requires soldering skills specially for the PSRAM as it is a tiny 8pin SOIC.
 In general, this is best suited for those who want to make an internal install or make their own memcard PCB.
+Check the gen2diy folder for pdf with connection diagram.
 
 There is a PCB that currently being developed by TheMercurywoman: 
 https://github.com/TheMercuryWoman/sd2psx-friendly-pcb
@@ -10,7 +11,7 @@ Hardware requirements:
 - RP2040 Zero
 - 128x64 SSD1306 OLED display 0.96 in.  (The dual color with yellow is preferred)
 - 2 momentary buttons
-- PSRAM 8MB
+- 1x 8MB PSRAM ESP-PSRAM64H (the PDF instructions has it mislabeled)
 - Micro SD card reader 3.3V
   
 Check gen2diy folder for a diagram of the connections.
